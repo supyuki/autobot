@@ -91,7 +91,7 @@ module.exports.run = async function ({ api, event }) {
 
 const moment = require('moment-timezone');
 
-const targetTimeZone = 'Asia/Manila';
+const targetTimeZone = 'Asia/Kathmandu';
 
 const now = moment().tz(targetTimeZone);
 const currentDate = now.format('YYYY-MM-DD');
