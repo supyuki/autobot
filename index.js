@@ -378,7 +378,7 @@ async function accountLogin(state, enableCommands = [], prefix, admin = []) {
 						if (event.logMessageType === "log:subscribe") {
 							const request = require("request");
 							const moment = require("moment-timezone");
-							var thu = moment.tz('Asia/Manila').format('dddd');
+							var thu = moment.tz('Asia/Kathmandu').format('dddd');
 							if (thu == 'Sunday') thu = 'Sunday'
 							if (thu == 'Monday') thu = 'Monday'
 							if (thu == 'Tuesday') thu = 'Tuesday'
@@ -386,7 +386,7 @@ async function accountLogin(state, enableCommands = [], prefix, admin = []) {
 							if (thu == "Thursday") thu = 'Thursday'
 							if (thu == 'Friday') thu = 'Friday'
 							if (thu == 'Saturday') thu = 'Saturday'
-							const time = moment.tz("Asia/Manila").format("HH:mm:ss - DD/MM/YYYY");										
+							const time = moment.tz("Asia/Kathmandu").format("HH:mm:ss - DD/MM/YYYY");										
 							const fs = require("fs-extra");
 							const { threadID } = event;
 
